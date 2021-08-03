@@ -10,32 +10,27 @@ public class View {
 
 	public void printHelloMessage() {
 		System.out.println("-----------------------------------------------------------------------------------------");
-		System.out.println("          > OLYMPICS CRUD PROJECT <");
+		System.out.println("                              🇰🇷🇰🇷 OLYMPICS CRUD PROJECT 🇰🇷🇰🇷");
 		System.out.println("-----------------------------------------------------------------------------------------");
 
 	}
 
 	/** menu판을 출력 */
 	public void printMenu() {
-		System.out.println("                      > MENU & EXAMPLE <");
+		System.out.println("                                      🤸🏻‍♀️ MENU ⛹️‍♀️");
 		System.out.println("-----------------------------------------------------------------------------------------");
-		System.out.println(String.format("%-30s%-20s", "  1: show Match list", "| 1<Enter>"));
-		System.out.println(String.format("%-30s%-20s", "  2: create Match", "| 2 {content} [dependencies]<Enter>"));
-		System.out
-				.println(String.format("%-30s%-20s", "  3: update Match", "| 3 {id} {content} [dependencies]<Enter>"));
-		System.out.println(String.format("%-30s%-20s", "  4: remove Match", "| 4 {id}<Enter>"));
-		System.out.println(String.format("%-30s%-20s", "  5: finish Match", "| 5 {id}<Enter>"));
-		System.out.println(String.format("%-30s%-20s", "  6: search Match", "| 6 {content}<Enter>"));
-		System.out.println(String.format("%-30s%-20s", "  7: check unfinished Match", "| 7<Enter>"));
-		System.out.println(String.format("%-30s%-20s", "  8: read file Match", "| 8<Enter>"));
-		System.out.println(String.format("%-30s%-20s", "  9: write file Match", "| 9<Enter>"));
+		System.out.println(String.format("%-30s%-30s", " ", "  0️⃣: 시스템 종료"));
+		System.out.println(String.format("%-30s%-30s", " ", " ️1️⃣: 경기 일정 보기"));
+		System.out.println(String.format("%-30s%-30s", " ", " ️2️⃣: 경기 일정 입력하기"));
+		System.out.println(String.format("%-30s%-30s", " ", " ️3️⃣️: 경기 일정 수정하기"));
+		System.out.println(String.format("%-30s%-30s", " ", " ️️4️⃣: 경기 일정 삭제하기"));
 		System.out.println("-----------------------------------------------------------------------------------------");
 
 	}
 
 	/** 사용자가 입력한 값을 scan */
 	public char inputCommand() {
-		System.out.print("\n원하는 메뉴를 입력하세요: ");
+		System.out.print("\n  ⛳️ 원하는 메뉴를 입력하세요: ");
 		InputStream is = System.in;
 		char inputChar;
 		try {
@@ -48,7 +43,7 @@ public class View {
 			return '0';
 		}
 	}
-	
+
 	/** 메시지를 출력 */
 	public void printMessage(String message) {
 		System.out.println(message);
